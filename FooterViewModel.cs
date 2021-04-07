@@ -48,7 +48,6 @@ namespace FlightDetector
                 model.nextLine = value;
             }
         }
-
         public void stopPlay()
         {
             model.stopPlay();

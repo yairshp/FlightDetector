@@ -82,9 +82,28 @@ namespace FlightDetector
             vm.VM_NextLine = Convert.ToInt32(slider.Value.ToString());
         }
 
-        private void stopButton_Click(object sender, RoutedEventArgs e)
+        private void stopButton_Click_1(object sender, RoutedEventArgs e)
         {
             vm.stopPlay();
+        }
+
+        private void skipToTheEndButton_Click(object sender, RoutedEventArgs e)
+        {
+        }
+
+        private void skipToTheStartButton_Click(object sender, RoutedEventArgs e)
+        {
+            vm.VM_NextLine = 0;
+        }
+
+        private void backButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void fastForwardButton_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

@@ -19,11 +19,11 @@
         </ProgressBar>
         <Slider Minimum="0" Maximum="2174" x:Name="slider" Value ="{Binding VM_NextLine}"  IsSnapToTickEnabled="true" HorizontalAlignment="Left" Margin="99,258,0,0" VerticalAlignment="Top" Width="642" ValueChanged="slider_ValueChanged" />
         <Button x:Name="playButton" Content="play" FontWeight="Bold" HorizontalAlignment="Left" Margin="165,328,0,0" VerticalAlignment="Top" Click="playButton_Click" Height="25" Width="40" FontSize="14" RenderTransformOrigin="0.518,0.275"/>
-        <Button x:Name="skipToTheStartButton" FontWeight="Bold" Content="skip to the start" HorizontalAlignment="Left" Margin="0,328,0,0" VerticalAlignment="Top" Height="25" Width="110" FontSize="14"/>
-        <Button x:Name="backButton" Content="back" FontWeight="Bold" HorizontalAlignment="Left" Margin="115,328,0,0" VerticalAlignment="Top" Height="25" Width="40" FontSize="14" RenderTransformOrigin="0.915,0.476"/>
-        <Button x:Name="fastForwardButton" Content="fast forward" FontWeight="Bold" HorizontalAlignment="Left" Margin="255,328,0,0" VerticalAlignment="Top" Height="25" Width="94" FontSize="14"/>
-        <Button x:Name="skipToTheEndButton" Content="skip to the end" FontWeight="Bold" HorizontalAlignment="Left" Margin="354,328,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.194,0.967" Height="25" Width="109" FontSize="14"/>
-        <Button x:Name="stopButton" Content="stop" FontWeight="Bold" HorizontalAlignment="Left" Margin="210,328,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.06,0.579" Height="25" Width="40" FontSize="14"/>
+        <Button x:Name="skipToTheStartButton" FontWeight="Bold" Content="skip to the start" HorizontalAlignment="Left" Margin="0,328,0,0" VerticalAlignment="Top" Height="25" Width="110" FontSize="14" Click="skipToTheStartButton_Click"/>
+        <Button x:Name="backButton" Content="back" FontWeight="Bold" HorizontalAlignment="Left" Margin="115,328,0,0" VerticalAlignment="Top" Height="25" Width="40" FontSize="14" RenderTransformOrigin="0.915,0.476" Click="backButton_Click"/>
+        <Button x:Name="fastForwardButton" Content="fast forward" FontWeight="Bold" HorizontalAlignment="Left" Margin="255,328,0,0" VerticalAlignment="Top" Height="25" Width="94" FontSize="14" Click="fastForwardButton_Click"/>
+        <Button x:Name="skipToTheEndButton" Content="skip to the end" FontWeight="Bold" HorizontalAlignment="Left" Margin="354,328,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.194,0.967" Height="25" Width="109" FontSize="14" Click="skipToTheEndButton_Click"/>
+        <Button x:Name="stopButton" Content="stop" FontWeight="Bold" HorizontalAlignment="Left" Margin="210,328,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.06,0.579" Height="25" Width="40" FontSize="14" Click="stopButton_Click_1"/>
 
         <ComboBox x:Name ="speeds" HorizontalAlignment="Left" Margin="621,331,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged" IsEditable="True"
                  IsReadOnly="True" Text="Normal">

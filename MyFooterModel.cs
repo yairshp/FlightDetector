@@ -56,7 +56,7 @@ namespace FlightDetector
                 // Read the file and display it line by line.  
                 while ((nextLine < csvNumOfLine) && !stop)
                    {
-                    if (nextLine < 2174) {
+                    if (nextLine < csvNumOfLine) {
                         client.write(lines[nextLine]);
                     }
 
